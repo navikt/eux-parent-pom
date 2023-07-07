@@ -26,6 +26,11 @@
                     <id>github-package-registry-navikt</id>
                     <url>https://maven.pkg.github.com/navikt/maven-release</url>
                 </repository>
+                <repository>
+                    <id>github</id>
+                    <name>GitHub navikt Apache Maven Packages</name>
+                    <url>https://maven.pkg.github.com/navikt</url>
+                </repository>
             </repositories>
             <pluginRepositories>
                 <pluginRepository>
@@ -48,6 +53,11 @@
             <id>github-package-registry-navikt</id>
             <username>${env.GITHUB_ACTOR}</username>
             <password>${env.GITHUB_TOKEN}</password>
+        </server>
+        <server>
+            <id>github</id>
+            <username>${env.GITHUB_USERNAME}</username>
+            <password>${env.GITHUB_PASSWORD}</password>
         </server>
     </servers>
 </settings>
