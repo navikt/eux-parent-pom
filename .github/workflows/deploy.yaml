@@ -51,7 +51,7 @@ jobs:
 
       - name: Test and build
         run: >
-          mvn clean package scm:tag -B -e -U 
+          mvn clean deploy scm:tag -B -e -U 
           --settings ./.github/settings.xml
           --no-transfer-progress
 
