@@ -49,11 +49,11 @@ jobs:
           echo "version=$(mvn -q --no-transfer-progress --settings ./.github/settings.xml 
           -Dexec.executable=echo -Dexec.args='${project.version}' --non-recursive exec:exec)" >> $GITHUB_OUTPUT
 
-      - name: Test and build
-        run: >
-          mvn clean deploy scm:tag -B -e -U 
-          --settings ./.github/settings.xml
-          --no-transfer-progress
+      - name: Mvn Deploy
+        run: mvn clean deploy scm:tag -B -e -U --settings ./.github/settings.xml --no-transfer-progress
+        env:
+          GITHUB_USERNAME: x-access-token
+          GITHUB_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Echo Version
         run: echo "### Version ${{ steps.versions.outputs.version }}" >> $GITHUB_STEP_SUMMARY
