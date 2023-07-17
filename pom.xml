@@ -103,6 +103,7 @@
                     <configuration>
                         <tag>${project.artifactId}-${project.version}</tag>
                     </configuration>
+                    <version>2.0.1</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
