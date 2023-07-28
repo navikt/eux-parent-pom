@@ -23,6 +23,7 @@
         <postgresql.version>42.6.0</postgresql.version>
         <token.validation.version>3.1.0</token.validation.version>
         <springdoc.openapi.starter.version>2.1.0</springdoc.openapi.starter.version>
+        <logstash.logback.encoder.version>7.4</logstash.logback.encoder.version>
     </properties>
 
     <scm>
@@ -59,6 +60,11 @@
                 <groupId>no.nav.security</groupId>
                 <artifactId>token-validation-spring</artifactId>
                 <version>${token.validation.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.logstash.logback</groupId>
+                <artifactId>logstash-logback-encoder</artifactId>
+                <version>${logstash.logback.encoder.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.zaxxer</groupId>
