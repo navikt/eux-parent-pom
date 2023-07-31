@@ -1,4 +1,4 @@
-### EUX Relaterte Rinasaker
+### EUX Parent POM
 
 Felles avhengigheter brukt av EUX komponenter i NAV.
 
