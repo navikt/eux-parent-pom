@@ -24,6 +24,10 @@
         <token.validation.version>3.1.0</token.validation.version>
         <springdoc.openapi.starter.version>2.1.0</springdoc.openapi.starter.version>
         <logstash.logback.encoder.version>7.4</logstash.logback.encoder.version>
+        <eux.versions.maven.plugin.version>0.0.2</eux.versions.maven.plugin.version>
+        <maven.scm.plugin.version>2.0.1</maven.scm.plugin.version>
+        <maven.surefire.plugin.version>3.0.0</maven.surefire.plugin.version>
+        <maven.failsafe.plugin.version>3.0.0</maven.failsafe.plugin.version>
     </properties>
 
     <scm>
@@ -101,7 +105,7 @@
                 <plugin>
                     <groupId>no.nav.eux.versions</groupId>
                     <artifactId>eux-versions-maven-plugin</artifactId>
-                    <version>0.0.2</version>
+                    <version>${eux.versions.maven.plugin.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -109,17 +113,17 @@
                     <configuration>
                         <tag>${project.artifactId}-${project.version}</tag>
                     </configuration>
-                    <version>2.0.1</version>
+                    <version>${maven.scm.plugin.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>3.0.0</version>
+                    <version>${maven.surefire.plugin.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-failsafe-plugin</artifactId>
-                    <version>3.0.0</version>
+                    <version>${maven.failsafe.plugin.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.jetbrains.kotlin</groupId>
