@@ -45,6 +45,7 @@ jobs:
       - name: Set Next Version
         run: >
           mvn eux-versions:set-next -B -e -U --settings ./.github/settings.xml
+          -DmajorVersion=1
           -DnewVersion=${{ github.event.inputs.version }}
           --no-transfer-progress
 
