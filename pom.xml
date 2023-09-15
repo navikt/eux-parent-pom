@@ -99,7 +99,7 @@
             <dependency>
                 <groupId>no.nav.security</groupId>
                 <artifactId>token-validation-spring-test</artifactId>
-                <version>${token.validation.version}</version>
+                <version>${token.support.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
