@@ -9,4 +9,4 @@ Felles avhengigheter brukt av EUX komponenter i NAV.
 
 #### Avhengigheter
 
-* JDK 17
+* JDK 21
