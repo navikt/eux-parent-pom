@@ -25,6 +25,7 @@
         <springdoc.openapi.starter.version>2.3.0</springdoc.openapi.starter.version>
         <logstash.logback.encoder.version>7.4</logstash.logback.encoder.version>
         <eux.versions.maven.plugin.version>0.0.2</eux.versions.maven.plugin.version>
+        <eux.logging.version>1.0.2</eux.logging.version>
         <maven.scm.plugin.version>2.0.1</maven.scm.plugin.version>
         <maven.surefire.plugin.version>3.0.0</maven.surefire.plugin.version>
         <maven.failsafe.plugin.version>3.0.0</maven.failsafe.plugin.version>
@@ -105,6 +106,11 @@
                 <groupId>io.github.oshai</groupId>
                 <artifactId>kotlin-logging-jvm</artifactId>
                 <version>${kotlin.logging.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>no.nav.eux</groupId>
+                <artifactId>eux-logging</artifactId>
+                <version>${eux.logging.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
