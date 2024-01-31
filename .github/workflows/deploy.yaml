@@ -25,19 +25,20 @@ jobs:
           fetch-depth: 0
 
       - name: Set up JDK 21
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4
         with:
+          java-version: 21
           distribution: 'temurin'
-          java-version: '21'
+          cache: 'maven'
 
-      - name: Setup Maven
-        uses: actions/cache@v3
-        with:
-          path: ~/.m2/repository
-          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-          restore-keys: |
-            ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-            ${{ runner.os }}-maven-
+#      - name: Setup Maven
+#        uses: actions/cache@v3
+#        with:
+#          path: ~/.m2/repository
+#          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+#          restore-keys: |
+#            ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+#            ${{ runner.os }}-maven-
 
       - name: Setup Git User
         uses: fregante/setup-git-user@v2
