@@ -20,7 +20,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -30,15 +30,6 @@ jobs:
           java-version: 21
           distribution: 'temurin'
           cache: 'maven'
-
-#      - name: Setup Maven
-#        uses: actions/cache@v3
-#        with:
-#          path: ~/.m2/repository
-#          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-#          restore-keys: |
-#            ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-#            ${{ runner.os }}-maven-
 
       - name: Setup Git User
         uses: fregante/setup-git-user@v2
