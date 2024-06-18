@@ -10,18 +10,18 @@
     <packaging>pom</packaging>
 
     <properties>
-        <kotlin.version>1.9.22</kotlin.version>
+        <kotlin.version>1.9.23</kotlin.version>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
-        <spring.boot.version>3.2.2</spring.boot.version>
+        <spring.boot.version>3.2.4</spring.boot.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <kotlin.code.style>official</kotlin.code.style>
         <kotlin.compiler.jvmTarget>21</kotlin.compiler.jvmTarget>
         <kotlin.logging.version>5.1.4</kotlin.logging.version>
-        <junit.jupiter.engine.version>5.10.1</junit.jupiter.engine.version>
+        <junit.jupiter.engine.version>5.10.2</junit.jupiter.engine.version>
         <hikaricp.version>5.0.1</hikaricp.version>
         <postgresql.version>42.7.2</postgresql.version>
-        <token.support.version>4.1.3</token.support.version>
+        <token.support.version>4.1.4</token.support.version>
         <springdoc.openapi.starter.version>2.3.0</springdoc.openapi.starter.version>
         <logstash.logback.encoder.version>7.4</logstash.logback.encoder.version>
         <eux.versions.maven.plugin.version>0.0.2</eux.versions.maven.plugin.version>
@@ -45,18 +45,6 @@
         </repository>
     </distributionManagement>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-dependencies</artifactId>
-            <version>${spring.boot.version}</version>
-            <type>pom</type>
-        </dependency>
-        <dependency>
-            <groupId>no.nav.security</groupId>
-            <artifactId>token-validation-spring</artifactId>
-        </dependency>
-    </dependencies>
     <dependencyManagement>
         <dependencies>
             <dependency>
