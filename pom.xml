@@ -21,7 +21,7 @@
         <kotest.version>5.9.1</kotest.version>
         <junit.jupiter.engine.version>5.10.2</junit.jupiter.engine.version>
         <hikaricp.version>5.0.1</hikaricp.version>
-        <postgresql.version>42.6.2</postgresql.version>
+        <postgresql.version>42.7.2</postgresql.version>
         <token.support.version>4.1.4</token.support.version>
         <springdoc.openapi.starter.version>2.3.0</springdoc.openapi.starter.version>
         <logstash.logback.encoder.version>7.4</logstash.logback.encoder.version>
