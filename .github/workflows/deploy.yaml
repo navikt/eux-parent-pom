@@ -55,3 +55,13 @@ jobs:
 
       - name: Echo Version
         run: echo "### Version ${{ steps.versions.outputs.version }}" >> $GITHUB_STEP_SUMMARY
+
+      - name: Release Drafter
+        uses: release-drafter/release-drafter@v6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          name: "${{ steps.versions.outputs.version }}"
+          version: "v${{ steps.versions.outputs.version }}"
+          tag: "eux-parent-pom-${{ steps.versions.outputs.version }}"
+          publish: true

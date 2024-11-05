@@ -1,0 +1,6 @@
+name-template: ''
+tag-template: ''
+template: |
+  ## Changes
+
+  $CHANGES
