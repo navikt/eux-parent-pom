@@ -13,7 +13,7 @@
         <kotlin.version>1.9.25</kotlin.version>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
-        <spring.boot.version>3.4.0</spring.boot.version>
+        <spring.boot.version>3.4.1</spring.boot.version>
         <token.support.version>5.0.12</token.support.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <kotlin.code.style>official</kotlin.code.style>
@@ -27,6 +27,8 @@
         <logstash.logback.encoder.version>7.4</logstash.logback.encoder.version>
         <eux.versions.maven.plugin.version>0.0.2</eux.versions.maven.plugin.version>
         <eux.logging.version>1.0.4</eux.logging.version>
+        <commons.text.version>1.13.0</commons.text.version>
+        <graphql.java.extended.scalars.version>22.0</graphql.java.extended.scalars.version>
         <maven-scm-plugin.version>2.0.1</maven-scm-plugin.version>
         <maven-surefire-plugin.version>3.5.2</maven-surefire-plugin.version>
         <maven-failsafe-plugin.version>3.5.2</maven-failsafe-plugin.version>
@@ -143,6 +145,16 @@
                 <artifactId>kotest-assertions-json-jvm</artifactId>
                 <version>${kotest.version}</version>
                 <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-text</artifactId>
+                <version>${commons.text.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.graphql-java</groupId>
+                <artifactId>graphql-java-extended-scalars</artifactId>
+                <version>${graphql.java.extended.scalars.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
