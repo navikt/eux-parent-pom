@@ -1,6 +1,6 @@
 ### EUX Parent POM
 
-Felles avhengigheter brukt av EUX komponenter i NAV.
+Felles avhengigheter brukt av EUX komponenter i NAV
 
 ## Brukte teknologier
 * Kotlin
