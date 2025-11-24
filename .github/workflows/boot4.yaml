@@ -1,8 +1,12 @@
-name: deploy
+name: boot4
 
 on:
-  push:
-    branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'New version number, leave blank for auto increment.'
+        required: false
+        default: ''
 
 permissions:
   deployments: write
@@ -23,6 +27,7 @@ jobs:
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
+          ref: boot4
 
       - name: Set up JDK 21
         uses: actions/setup-java@v4
@@ -37,7 +42,7 @@ jobs:
       - name: Set Next Version
         run: >
           mvn eux-versions:set-next -B -e -U --settings ./.github/settings.xml
-          -DmajorVersion=1
+          -DmajorVersion=2
           -DnewVersion=${{ github.event.inputs.version }}
           --no-transfer-progress
 
