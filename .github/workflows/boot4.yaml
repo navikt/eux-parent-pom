@@ -2,11 +2,6 @@ name: boot4
 
 on:
   workflow_dispatch:
-    inputs:
-      version:
-        description: 'New version number, leave blank for auto increment.'
-        required: false
-        default: ''
 
 permissions:
   deployments: write
