@@ -23,7 +23,7 @@
         <junit.jupiter.engine.version>6.0.1</junit.jupiter.engine.version>
         <hikaricp.version>7.0.2</hikaricp.version>
         <postgresql.version>42.7.8</postgresql.version>
-        <springdoc.openapi.starter.version>3.0.0</springdoc.openapi.starter.version>
+        <springdoc.openapi.starter.version>3.0.1</springdoc.openapi.starter.version>
         <logstash.logback.encoder.version>8.1</logstash.logback.encoder.version>
         <eux.versions.maven.plugin.version>0.0.2</eux.versions.maven.plugin.version>
         <eux.logging.version>1.0.4</eux.logging.version>
