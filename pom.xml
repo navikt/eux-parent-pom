@@ -13,18 +13,15 @@
         <kotlin.version>2.2.21</kotlin.version>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
-        <spring.boot.version>4.0.5</spring.boot.version>
-        <jackson3.version>3.1.1</jackson3.version>
-        <token.support.version>6.0.5</token.support.version>
+        <spring.boot.version>4.0.6</spring.boot.version>
+        <token.support.version>6.0.6</token.support.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <kotlin.code.style>official</kotlin.code.style>
         <kotlin.compiler.jvmTarget>21</kotlin.compiler.jvmTarget>
         <kotlin.logging.version>7.0.13</kotlin.logging.version>
         <kotest.version>6.0.7</kotest.version>
         <junit.jupiter.engine.version>6.0.3</junit.jupiter.engine.version>
-        <hikaricp.version>7.0.2</hikaricp.version>
-        <postgresql.version>42.7.10</postgresql.version>
-        <springdoc.openapi.starter.version>3.0.2</springdoc.openapi.starter.version>
+        <springdoc.openapi.starter.version>3.0.3</springdoc.openapi.starter.version>
         <logstash.logback.encoder.version>8.1</logstash.logback.encoder.version>
         <eux.versions.maven.plugin.version>0.0.2</eux.versions.maven.plugin.version>
         <eux.logging.version>1.0.5</eux.logging.version>
@@ -66,16 +63,6 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>tools.jackson.core</groupId>
-                <artifactId>jackson-core</artifactId>
-                <version>${jackson3.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>tools.jackson.core</groupId>
-                <artifactId>jackson-databind</artifactId>
-                <version>${jackson3.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>${spring.boot.version}</version>
@@ -103,16 +90,6 @@
                 <groupId>net.logstash.logback</groupId>
                 <artifactId>logstash-logback-encoder</artifactId>
                 <version>${logstash.logback.encoder.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.zaxxer</groupId>
-                <artifactId>HikariCP</artifactId>
-                <version>${hikaricp.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.postgresql</groupId>
-                <artifactId>postgresql</artifactId>
-                <version>${postgresql.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springdoc</groupId>
