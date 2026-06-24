@@ -38,6 +38,7 @@
         <maven-install-plugin.version>3.1.4</maven-install-plugin.version>
         <jackson-2-bom.version>2.22.0</jackson-2-bom.version>
         <jackson-bom.version>3.2.0</jackson-bom.version>
+        <jackson2.annotations.version>2.22</jackson2.annotations.version>
     </properties>
 
     <scm>
@@ -167,6 +168,11 @@
                 <version>${jackson-bom.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${jackson2.annotations.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
