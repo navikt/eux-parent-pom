@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <kotlin.version>2.3.21</kotlin.version>
+        <kotlin.version>2.4.10</kotlin.version>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <spring.boot.version>4.1.0</spring.boot.version>
@@ -38,6 +38,7 @@
         <jackson-2-bom.version>2.22.1</jackson-2-bom.version>
         <jackson-bom.version>3.2.1</jackson-bom.version>
         <jackson2.annotations.version>2.22</jackson2.annotations.version>
+        <postgresql.version>42.7.13</postgresql.version>
     </properties>
 
     <scm>
@@ -202,6 +203,16 @@
                 <groupId>tools.jackson.core</groupId>
                 <artifactId>jackson-core</artifactId>
                 <version>${jackson-bom.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>tools.jackson.module</groupId>
+                <artifactId>jackson-module-kotlin</artifactId>
+                <version>${jackson-bom.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>${postgresql.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
