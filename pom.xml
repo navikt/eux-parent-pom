@@ -38,6 +38,7 @@
         <jackson-2-bom.version>2.22.1</jackson-2-bom.version>
         <jackson-bom.version>3.2.1</jackson-bom.version>
         <jackson2.annotations.version>2.22</jackson2.annotations.version>
+        <postgresql.version>42.7.13</postgresql.version>
     </properties>
 
     <scm>
@@ -207,6 +208,11 @@
                 <groupId>tools.jackson.module</groupId>
                 <artifactId>jackson-module-kotlin</artifactId>
                 <version>${jackson-bom.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>${postgresql.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
