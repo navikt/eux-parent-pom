@@ -27,7 +27,7 @@ push a branch, open a PR, and report exactly what changed and what didn't.
    edits.
 2. **Never touch `<version>1.0-SNAPSHOT</version>` of the parent POM itself.**
    The real version is assigned automatically by the `eux-versions-maven-plugin`
-   on merge to `main` (`eux-versions:set-next -DmajorVersion=2`). Leave it as
+   on merge to `main` (`eux-versions:set-next -DmajorVersion=3`). Leave it as
    `1.0-SNAPSHOT`.
 3. **Pin exact releases only.** No version ranges, no `-SNAPSHOT`, no `-RC` /
    `-M` / `-beta` unless the user explicitly asks. Every bumped value must be a
