@@ -1,4 +1,4 @@
-name: boot4
+name: deploy
 
 on:
   push:
@@ -20,14 +20,14 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
-      - name: Set up JDK 21
-        uses: actions/setup-java@v5
+      - name: Set up JDK 25
+        uses: actions/setup-java@v6
         with:
-          java-version: 21
+          java-version: 25
           distribution: 'temurin'
           cache: 'maven'
 
@@ -37,7 +37,7 @@ jobs:
       - name: Set Next Version
         run: >
           mvn eux-versions:set-next -B -e -U --settings ./.github/settings.xml
-          -DmajorVersion=2
+          -DmajorVersion=3
           -DnewVersion=${{ github.event.inputs.version }}
           --no-transfer-progress
 
