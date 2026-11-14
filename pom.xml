@@ -27,6 +27,7 @@
         <eux.versions.maven.plugin.version>0.0.2</eux.versions.maven.plugin.version>
         <eux.logging.version>1.0.5</eux.logging.version>
         <commons.text.version>1.15.0</commons.text.version>
+        <graphql.java.version>26.2</graphql.java.version>
         <graphql.java.extended.scalars.version>24.0</graphql.java.extended.scalars.version>
         <okhttp3.version>4.12.0</okhttp3.version>
         <maven-scm-plugin.version>2.2.1</maven-scm-plugin.version>
@@ -140,6 +141,11 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-text</artifactId>
                 <version>${commons.text.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.graphql-java</groupId>
+                <artifactId>graphql-java</artifactId>
+                <version>${graphql.java.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.graphql-java</groupId>
